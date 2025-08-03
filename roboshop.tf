@@ -1,7 +1,7 @@
 resource "aws_instance" "roboshop" {
   #count                  = 3
-  for_each               = var.instances
-  ami                    = var.ami_id
+  for_each = var.instances
+  ami      = var.ami_id
   #instance_type          = var.enviroment == "dev" ? "t2.micro" : "t3.small"
   instance_type          = each.value
   key_name               = "Devops"

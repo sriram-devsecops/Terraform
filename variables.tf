@@ -66,8 +66,8 @@ variable "enviroment" {
 
 variable "instances" {
   default = {
-	mongo = "t2.micro"
-	frontend = "t3.micro"
-	user = "t3.micro"
-}
+    mongo    = "t2.micro"
+    frontend = "t3.micro"
+    user     = "t3.micro"
+  }
 }
